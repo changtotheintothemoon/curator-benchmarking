@@ -1,0 +1,21 @@
+AGE_IN_DAYS_AT_FOLLOWUP	PROGRESSION_OR_RECURRENCE	DISEASE_RESPONSE	ECOG_PERFORMANCE_STATUS	MENOPAUSE_STATUS	AGE_IN_DAYS_AT_PROGRESSION_OR_RECURRENCE	PROGRESSION_OR_RECURRENCE_ANATOMIC_SITE_UBERON_CODE	PROGRESSION_OR_RECURRENCE_TYPE	EVIDENCE_OF_RECURRENCE_TYPE
+365	Yes	Progressive Disease	2	Postmenopausal	400	UBERON:0002048	Biochemical	Biopsy with Histologic Confirmation
+730	No	Stable Disease	1	Premenopausal	-1			
+1095	Yes	Partial Response	3	Not Applicable	1200	UBERON:0001155	Locoregional	Convincing Image (i.e. CT/PET/MRI)
+180	Not Reported	Complete Response	0	Menopausal	-1			
+500	Censored	No Evidence of Disease	4	Postmenopausal (>12 mo since LMP with no prior ovariectomy)	-1			
+250	Yes	Persistent Disease	2	Premenopausal/Perimenopausal	-1			
+900	Unknown	Not Evaluable	5	Postmenopausal	-1			
+1500	Yes	Complete Response	1	Not Reported	1550	UBERON:0002113	Distant	Positive Biomarkers
+450	No	Progressive Disease	0	Perimenopausal	-1			
+2000	Not Applicable	Stable Disease	3	Postmenopausal (prior bilateral ovariectomy)	-1			
+600	Yes	No Response	2	Postmenopausal	650	UBERON:0000178	Local	Biopsy with Histologic Confirmation
+800	Not Allowed to Collect	Not Reported	1	Unknown	-1			
+1200	Yes	Partial Response	4	Menopausal	-1			
+300	Yes	Progressive Disease	2	Premenopausal	350	UBERON:0002367	Regional	Convincing Image (i.e. CT/PET/MRI)
+1800	No	Complete Response	0	Not Applicable	-1			
+950	Unknown	No Evidence of Disease	3	Postmenopausal	-1			
+400	Yes	Stable Disease	1	Perimenopausal	450	UBERON:0000955	Biochemical	Positive Biomarkers
+700	Censored	Not Applicable	2	Premenopausal/Perimenopausal	-1			
+1400	Yes	Persistent Disease	5	Postmenopausal (>12 mo since LMP with no prior ovariectomy)	1450	UBERON:0001264	Locoregional	Biopsy with Histologic Confirmation
+550	No	No Response	1	Not Reported	-1			

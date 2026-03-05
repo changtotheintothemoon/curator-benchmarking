@@ -1,0 +1,21 @@
+AGE_IN_DAYS_AT_DIAGNOSIS	AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS	AJCC_STAGING_SYSTEM_EDITION	CLINICAL_M_STAGE	CLINICAL_N_STAGE	CLINICAL_T_STAGE	LAST_KNOWN_DISEASE_STATUS	METASTASIS_AT_DIAGNOSIS	METHOD_OF_DIAGNOSIS	TUMOR_CLASSIFICATION_CATEGORY	TUMOR_GRADE
+18250	18615	7th	M0	N0	T1	Tumor Free	Non-metastatic (confirmed)	Biopsy	Primary	G1 Low Grade
+21900	22265	8th	M1	N1	T0	Distant Metastasis	Metastatic	Fine Needle Aspiration	Metastatic	G3 High Grade
+16425	16790	6th	M0	N0	Tis	Tumor Free	Non-metastatic (confirmed)	Core Biopsy	Premalignant	G1 Low Grade
+25550	25915	5th	MX	NX	TX	With Tumor	Unknown	Surgical Resection	Primary	G2 Intermediate Grade
+14600	14965	7th	M1	N1	T2	With Tumor	Metastatic	Diagnostic Imaging	Metastatic	G3 High Grade
+19710	20075	4th	M0	N2	Tis	Localized Disease	Non-metastatic (confirmed)	Surgical Resection	Primary	G2 Intermediate Grade
+22630	22995	8th	MX	N3	T3	Regional Disease	Unknown	Diagnostic Imaging	Primary	G2 Intermediate Grade
+17885	18250	3rd	M1a	N1a	T1a	New Tumor Event	Metastatic	Magnetic Resonance Imaging Study File	Recurrence	G4 Anaplastic
+20440	20805	2nd	M0	N0	T1b	Tumor Free	Non-metastatic (confirmed)	Physical Examination	Primary	G3 High Grade
+23360	23725	1st	M1b	N2a	T2a	Distant Metastasis	Metastatic	Pathologic Review	Metastatic	GX Grade Cannot Be Assessed
+15330	15695	5th	M0	N1b	T0	Tumor Free	Non-metastatic (unconfirmed)	Histopathology	Primary	G1 Low Grade
+24090	24455	4th	M1c	N2b	T3a	With Tumor	Metastatic	Blood Sample	Metastatic	G4 Anaplastic
+18980	19345	3rd	M0	N0	T1c	Tumor Free	Non-metastatic (confirmed)	Bone Marrow Aspirate	Primary	G1 Low Grade
+21170	21535	2nd	MX	NX	TX	Unknown	Unknown	Fine Needle Aspiration	Primary	GX Grade Cannot Be Assessed
+16790	17155	1st	M0	N1c	T2b	Localized Disease	Non-metastatic (confirmed)	Ultrasound Imaging	Primary	G2 Intermediate Grade
+22265	22630	6th	M1	N2c	T3b	Regional Disease	Metastatic	Biopsy	Recurrence	G3 High Grade
+19345	19710	7th	M0	N3a	T4	With Tumor	Non-metastatic (confirmed)	Excisional Biopsy	Primary	G2 Intermediate Grade
+20805	21170	8th	M1a	N3b	T4a	Distant Metastasis	Metastatic	Incisional Biopsy	Metastatic	G3 High Grade
+17520	17885	6th	M0	N0	T1	Tumor Free	Non-metastatic (confirmed)	Laparoscopy	Primary	G1 Low Grade
+23725	24090	5th	M1b	N3c	T4b	Distant Metastasis	Metastatic	Laparotomy	Metastatic	G4 Anaplastic

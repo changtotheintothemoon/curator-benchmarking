@@ -1,0 +1,23 @@
+{
+  "experiment_id": "acc1c724e154c4e13ff4e004437d4ce3",
+  "task_name": "htan_demographics",
+  "task_hash": "e71ebdc04a2c99860bdfbd0ad403f2ed",
+  "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "system_instructions": "You are a metadata curation assistant. Your task is to help improve and correct metadata \naccording to the specific instructions provided for each task. Be precise, accurate, and \nfollow the guidelines carefully.\n",
+  "temperature": 0.0,
+  "thinking": false,
+  "tools": [],
+  "timestamp": "2026-03-04T11:15:08.919053",
+  "task_result": {
+    "task_name": "htan_demographics",
+    "error": "cannot access local variable 'metrics' where it is not associated with a value",
+    "metrics": {
+      "total_samples": 0,
+      "successful_runs": 0,
+      "failed_runs": 0,
+      "success_rate": 0,
+      "average_score": null
+    },
+    "duration_seconds": 0
+  }
+}

@@ -3,6 +3,7 @@ import json
 import hashlib
 import time
 import math
+import statistics
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, Any, List, Optional
@@ -290,9 +291,10 @@ class Experiment:
                 tool_executor=active_tool_executor
             )
             
-            # Initialize score to None
+            # Initialize score and metrics to None
             score = None
-            
+            metrics = {"score": None}
+
             if not response.get('success', False):
                 print(f"✗ Failed: {response.get('error', 'Unknown error')}")
             else:
@@ -319,17 +321,28 @@ class Experiment:
                             print(f"    [DEBUG] Failed to parse extracted JSON: {e}")
                             print(f"    [DEBUG] Extracted JSON string: {json_str[:200] if json_str else '(empty)'}")
                     
-                    score = self.scorer.score(
+                    score_result = self.scorer.score(
                         prediction=prediction_content,
                         ground_truth=ground_truth_dict,
                         input_data=sample,
                         task=task
                     )
+
+                    # Handle both dict and float returns
+                    if isinstance(score_result, dict):
+                        score = score_result.get("score", 0.0)
+                        metrics = score_result
+                    else:
+                        score = float(score_result) if score_result is not None else None
+                        metrics = {"score": score}
+
                     if score is not None:
                         print(f"✓ Score: {(score * 100):.2f}%")
                     else:
                         print(f"✓ Score: N/A (scoring failed)")
                 else:
+                    score = None
+                    metrics = {"score": None}
                     print("✓ (no ground truth for scoring)")
             
             # Extract token usage from response
@@ -347,6 +360,7 @@ class Experiment:
                 'input': sample,
                 'response': response,
                 'score': score,
+                'metrics': metrics,  # NEW: Store all metrics including F1/P/R/confidence
                 'ground_truth': ground_truth_samples[idx] if ground_truth_samples else None,
                 'token_usage': {
                     'input_tokens': input_tokens,
@@ -676,7 +690,7 @@ class Experiment:
         }
     
     def _calculate_metrics(self, results: List[Dict[str, Any]]) -> Dict[str, Any]:
-        """Calculate aggregate metrics from results."""
+        """Calculate aggregate metrics from results including F1/precision/recall/confidence."""
         # Filter out None and NaN values
         scores = [
             r['score'] for r in results
@@ -703,6 +717,42 @@ class Experiment:
             metrics['min_score'] = None
             metrics['max_score'] = None
             metrics['num_scored'] = 0
+
+        # Aggregate enhanced metrics (F1, precision, recall, confidence)
+        f1_scores = []
+        precisions = []
+        recalls = []
+        confidences = []
+
+        for r in results:
+            result_metrics = r.get('metrics', {})
+            if 'f1' in result_metrics:
+                f1_scores.append(result_metrics['f1'])
+            if 'precision' in result_metrics:
+                precisions.append(result_metrics['precision'])
+            if 'recall' in result_metrics:
+                recalls.append(result_metrics['recall'])
+            if 'confidence' in result_metrics:
+                confidences.append(result_metrics['confidence'])
+
+        # Add enhanced metrics if available
+        if f1_scores:
+            metrics['average_f1'] = sum(f1_scores) / len(f1_scores)
+            metrics['std_f1'] = statistics.stdev(f1_scores) if len(f1_scores) > 1 else 0.0
+            metrics['min_f1'] = min(f1_scores)
+            metrics['max_f1'] = max(f1_scores)
+
+        if precisions:
+            metrics['average_precision'] = sum(precisions) / len(precisions)
+            metrics['std_precision'] = statistics.stdev(precisions) if len(precisions) > 1 else 0.0
+
+        if recalls:
+            metrics['average_recall'] = sum(recalls) / len(recalls)
+            metrics['std_recall'] = statistics.stdev(recalls) if len(recalls) > 1 else 0.0
+
+        if confidences:
+            metrics['average_confidence'] = sum(confidences) / len(confidences)
+            metrics['std_confidence'] = statistics.stdev(confidences) if len(confidences) > 1 else 0.0
 
         return metrics
     

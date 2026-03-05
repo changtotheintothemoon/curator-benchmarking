@@ -1,0 +1,713 @@
+{
+  "experiment_id": "9ef492fcfa9180db58fe32b744a416a0",
+  "task_name": "htan_exposure",
+  "task_hash": "b0a357d4dfd5b39cf756a4df9fa104e6",
+  "model_id": "anthropic/claude-3.5-sonnet",
+  "system_instructions": "You are a metadata curation assistant. Your task is to help improve and correct metadata \naccording to the specific instructions provided for each task. Be precise, accurate, and \nfollow the guidelines carefully.\n",
+  "temperature": 0.0,
+  "thinking": false,
+  "tools": [],
+  "timestamp": "2026-02-16T09:59:19.989602",
+  "task_result": {
+    "task_name": "htan_exposure",
+    "num_samples": 20,
+    "results": [
+      {
+        "sample_index": 0,
+        "input": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 1,
+        "input": {
+          "SMOKING_HISTORY": "Current smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "No",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Asbestos Exposure"
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Current smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "No",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Asbestos Exposure"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 2,
+        "input": {
+          "SMOKING_HISTORY": "Former Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Unknown",
+          "ENVIRONMENTAL_EXPOSURE": "Not Reported",
+          "PACK_YEARS_SMOKED": "25",
+          "YEARS_SMOKED": 15.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Former Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Unknown",
+          "ENVIRONMENTAL_EXPOSURE": "Not Reported",
+          "PACK_YEARS_SMOKED": 25.0,
+          "YEARS_SMOKED": 15.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 3,
+        "input": {
+          "SMOKING_HISTORY": "current smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "yes",
+          "ENVIRONMENTAL_EXPOSURE": "no",
+          "PACK_YEARS_SMOKED": "10",
+          "YEARS_SMOKED": 5.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Current smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "PACK_YEARS_SMOKED": 10.0,
+          "YEARS_SMOKED": 5.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 4,
+        "input": {
+          "SMOKING_HISTORY": "Current Every-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Not reported",
+          "ENVIRONMENTAL_EXPOSURE": "Unknown",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Current Every-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Not reported",
+          "ENVIRONMENTAL_EXPOSURE": "Unknown",
+          "PACK_YEARS_SMOKED": 5.0,
+          "YEARS_SMOKED": 3.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 5,
+        "input": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": " Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 6,
+        "input": {
+          "SMOKING_HISTORY": "Current Some-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Refused",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": 8.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Chemical Exposure|Radiation Exposure"
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Current Some-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Refused",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": 8.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Chemical Exposure|Radiation Exposure"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 7,
+        "input": {
+          "SMOKING_HISTORY": "Former smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Not applicable",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "PACK_YEARS_SMOKED": "40",
+          "YEARS_SMOKED": 20.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Former Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Not applicable",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "PACK_YEARS_SMOKED": 40.0,
+          "YEARS_SMOKED": 20.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 8,
+        "input": {
+          "SMOKING_HISTORY": NaN,
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 9,
+        "input": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": NaN,
+          "ENVIRONMENTAL_EXPOSURE": "Unknown",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Unknown",
+          "ENVIRONMENTAL_EXPOSURE": "Unknown",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 10,
+        "input": {
+          "SMOKING_HISTORY": "Current smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "no",
+          "PACK_YEARS_SMOKED": "-5",
+          "YEARS_SMOKED": 3.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Current smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "PACK_YEARS_SMOKED": 5.0,
+          "YEARS_SMOKED": 3.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 11,
+        "input": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Smoke Exposure"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 12,
+        "input": {
+          "SMOKING_HISTORY": "Current Every-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "No",
+          "ENVIRONMENTAL_EXPOSURE": "Not Reported",
+          "PACK_YEARS_SMOKED": "15.5",
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Current Every-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "No",
+          "ENVIRONMENTAL_EXPOSURE": "Not Reported",
+          "PACK_YEARS_SMOKED": 15.5,
+          "YEARS_SMOKED": 10.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 13,
+        "input": {
+          "SMOKING_HISTORY": "Former Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Unknown",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "PACK_YEARS_SMOKED": "abc",
+          "YEARS_SMOKED": 25.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Former Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Unknown",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "PACK_YEARS_SMOKED": 30.0,
+          "YEARS_SMOKED": 25.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 14,
+        "input": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Smoke Exposure"
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 15,
+        "input": {
+          "SMOKING_HISTORY": "Current Some-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Data not available",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "PACK_YEARS_SMOKED": "12",
+          "YEARS_SMOKED": 10.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Wood Dust Exposure|Radon Exposure"
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Current Some-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Data not available",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "PACK_YEARS_SMOKED": 12.0,
+          "YEARS_SMOKED": 10.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Wood Dust Exposure|Radon Exposure"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 16,
+        "input": {
+          "SMOKING_HISTORY": "Non-smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Pending",
+          "ENVIRONMENTAL_EXPOSURE": "Unknown",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Non-smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Pending",
+          "ENVIRONMENTAL_EXPOSURE": "Unknown",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 17,
+        "input": {
+          "SMOKING_HISTORY": "Former Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "PACK_YEARS_SMOKED": "30",
+          "YEARS_SMOKED": 18.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Former Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "PACK_YEARS_SMOKED": 30.0,
+          "YEARS_SMOKED": 18.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Asbestos Exposure|Chemical Exposure"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 18,
+        "input": {
+          "SMOKING_HISTORY": "Current smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "No",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "PACK_YEARS_SMOKED": "20",
+          "YEARS_SMOKED": 15.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Marijuana Smoke Exposure|Tobacco Related Exposure"
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Current smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "No",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "PACK_YEARS_SMOKED": 20.0,
+          "YEARS_SMOKED": 15.0,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Marijuana Smoke Exposure|Tobacco Related Exposure"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 19,
+        "input": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Not Reported",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "response": {
+          "success": false,
+          "error": "This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 443. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account",
+          "error_code": "HTTP_402",
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "attempt": 1
+        },
+        "score": null,
+        "ground_truth": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Not Reported",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "PACK_YEARS_SMOKED": NaN,
+          "YEARS_SMOKED": NaN,
+          "ENVIRONMENTAL_EXPOSURE_TYPE": NaN
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      }
+    ],
+    "metrics": {
+      "total_samples": 20,
+      "successful_runs": 0,
+      "failed_runs": 20,
+      "success_rate": 0.0,
+      "average_score": null,
+      "min_score": null,
+      "max_score": null,
+      "num_scored": 0
+    },
+    "duration_seconds": 10.375468969345093,
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0
+    }
+  }
+}
