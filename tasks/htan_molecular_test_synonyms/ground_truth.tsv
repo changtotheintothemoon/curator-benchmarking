@@ -1,0 +1,21 @@
+AGE_IN_DAYS_AT_MOLECULAR_TEST_START	GENE_SYMBOL	MOLECULAR_ANALYSIS_METHOD	MOLECULAR_ANALYSIS_RESULT	CLINICAL_BIOSPECIMEN_TYPE	AGE_IN_DAYS_AT_MOLECULAR_TEST_STOP	AA_CHANGE	COPY_NUMBER	EXON	TEST_RESULT	TEST_UNITS	TIMEPOINT_LABEL	VARIANT_ORIGIN	VARIANT_TYPE
+18250	BRCA1	WXS	Positive	BLOOD	18255	V600E	2	5	1.5	ng/mL	Initial Diagnosis	Germline	Substitution
+21900	TP53	Targeted sequencing	Abnormal, NOS	FORMALIN FIXED PARAFFIN EMBEDDED TISSUE	21905	R273H	1	7	2.3	ng/mL	Pre-treatment	Somatic	Substitution
+15330	EGFR	FISH	Overexpressed	FORMALIN FIXED PARAFFIN EMBEDDED TISSUE	15335	L858R	4	21	3.1	ng/mL	Baseline	Somatic	Amplification
+25550	KRAS	PCR	Positive	BLOOD	25555	G12D	2	2	0.8	ng/mL	Post-treatment	Somatic	Substitution
+10950	ALK	IHC	Overexpressed	FROZEN TISSUE	10955		3	20	4.2	ng/mL	Follow-up	Germline	Amplification
+32850	MET	RNA sequencing	High	FRESH TISSUE	32855	N375S	5	14	5.6	ng/mL	End of Treatment	Somatic Mosaic	Amplification
+19710	BRAF	Targeted sequencing	Positive	CEREBROSPINAL FLUID	19715	V600K	2	15	1.2	ng/mL	Diagnosis	Germline	Substitution
+8030	RET	Sequencing, NOS	Positive	BONE MARROW	8035	M918T	1	16	0.9	ng/mL	Pre-op	Somatic	Insertion
+27740	NRAS	RT-PCR	Positive	SALIVA	27745	Q61K	2	3	2.1	ng/mL	Post-op	Germline	Substitution
+12410	PIK3CA	WXS	Abnormal, NOS	STOOL	12415	H1047R	3	20	3.8	ng/mL	Relapse	Somatic	Deletion
+22630	ROS1	ISH	Positive	URINE	22635		2	32	1.7	ng/mL	Remission	Somatic	Rearrangement
+16790	ERBB2	IHC	Positive	OTHER BODILY FLUIDS	16795		6	8	4.5	ng/mL	Progression	Germline	Duplication
+29200	KIT	Flow cytometry	Positive	BUCCAL CELL SAMPLE	29205	D816V	2	17	2.9	ng/mL	Stable Disease	Somatic	Substitution
+14610	PDGFRA	Microarray	Overexpressed	BLOOD	14615	D842V	4	18	3.4	ng/mL	Response	Germline	Amplification
+20440	FGFR2	Southern blotting	Overexpressed	FORMALIN FIXED PARAFFIN EMBEDDED TISSUE	20445	S252W	5	7	5.1	ng/mL	Complete Response	Somatic	Copy Number Reported
+11680	IDH1	Comparative genomic hybridization	Overexpressed	FORMALIN FIXED TISSUE	11685	R132H	3	4	2.6	ng/mL	Partial Response	Germline	Amplification
+24020	IDH2	Karyotype	Abnormal, NOS	FRESH TISSUE	24025	R140Q	2	4	1.4	ng/mL	Progressive Disease	Somatic	Chromosomal Gain
+17520	NF1	Microsatellite analysis	Positive	OTHER BODILY FLUIDS	17525		1	27	0.7	ng/mL	Recurrence	Germline	Deletion
+26280	APC	Immunofluorescence	Positive	BONE MARROW	26285	R1450X	2	15	3.2	ng/mL	Second Primary	Somatic	Substitution
+13140	VHL	Cytogenetics, NOS	Positive	BLOOD	13145		1	1	1.9	ng/mL	Metastasis	Germline	Deletion

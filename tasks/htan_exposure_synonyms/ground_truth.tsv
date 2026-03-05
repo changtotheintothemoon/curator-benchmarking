@@ -1,0 +1,21 @@
+SMOKING_HISTORY	ALCOHOL_HISTORY_INDICATOR	ENVIRONMENTAL_EXPOSURE	ENVIRONMENTAL_EXPOSURE_TYPE	PACK_YEARS_SMOKED	YEARS_SMOKED
+Current Every-Day Smoker	Yes	Yes	Asbestos Exposure	25	15
+Current Some-Day Smoker	No	No			
+Former Smoker	Data not available	Yes	Chemical Exposure;Radiation Exposure	40	20
+Never Smoker	Unknown	Not Reported			
+Non-smoker	Not applicable	No			
+Current Every-Day Smoker	Refused	Yes	Smoke Exposure	15	10
+Former Smoker	Yes	Yes	Marijuana Smoke Exposure;Tobacco Related Exposure	30	18
+Current Some-Day Smoker	Pending	No			
+Current smoker	Data not available	Yes	Respirable Crystalline Silica Exposure	35	22
+Never Smoker	Yes	Unknown			
+Current Every-Day Smoker	No	Yes	Wood Dust Exposure;Chemical Exposure	20	12
+Former Smoker	Refused	Yes	Asbestos Exposure;Radiation Exposure	50	30
+Non-smoker	Not applicable	Not Reported			
+Current Some-Day Smoker	Yes	Yes	Smoke Exposure	5	3
+Current smoker	Data not available	No		28	16
+Never Smoker	No	Yes	Marijuana Smoke Exposure	0	0
+Current Every-Day Smoker	Yes	Yes	Tobacco Related Exposure;Respirable Crystalline Silica Exposure	45	25
+Former Smoker	Unknown	No		32	19
+Current Some-Day Smoker	Refused	Yes	Wood Dust Exposure	8	5
+Current smoker	Not applicable	Yes	Chemical Exposure;Asbestos Exposure	18	11

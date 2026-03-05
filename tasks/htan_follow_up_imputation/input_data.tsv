@@ -1,0 +1,21 @@
+AGE_IN_DAYS_AT_FOLLOWUP	PROGRESSION_OR_RECURRENCE	DISEASE_RESPONSE	ECOG_PERFORMANCE_STATUS	MENOPAUSE_STATUS	PROGRESSION_OR_RECURRENCE_ANATOMIC_SITE_UBERON_CODE	PROGRESSION_OR_RECURRENCE_TYPE	EVIDENCE_OF_RECURRENCE_TYPE	AGE_IN_DAYS_AT_PROGRESSION_OR_RECURRENCE
+18250	Yes	Progressive Disease	2		UBERON:0002048	Distant	Convincing Image (i.e. CT/PET/MRI)	18100
+21900	Yes	Partial Response	1	Postmenopausal			Biopsy with Histologic Confirmation	21850
+16425	No	Complete Response	0	Premenopausal				
+19710	Yes	Progressive Disease		Postmenopausal	UBERON:0002107	Locoregional		19650
+22630	No	Stable Disease	1					
+25550	Yes		2	Postmenopausal	UBERON:0001153	Distant	Convincing Image (i.e. CT/PET/MRI)	25400
+14600	No	No Evidence of Disease	0	Premenopausal				
+20075	Yes	Progressive Disease	3	Postmenopausal		Regional	Positive Biomarkers	
+23725	Unknown	Not Evaluable	1					
+17885	Yes	Persistent Disease	2		UBERON:0002113		Biopsy with Histologic Confirmation	17800
+26280	No		0	Premenopausal				
+18980	Yes	Progressive Disease	2	Postmenopausal	UBERON:0000310	Distant		18900
+24090	Not Reported	Not Reported	1					
+15330	Yes	Progressive Disease		Premenopausal	UBERON:0001255	Locoregional	Convincing Image (i.e. CT/PET/MRI)	
+19345	No	Stable Disease	0	Not Applicable				
+22815	Yes	Progressive Disease	3	Postmenopausal	UBERON:0002097		Positive Biomarkers	22700
+27375	Censored	Not Applicable						
+20440	Yes		1		UBERON:0001062	Local	Biopsy with Histologic Confirmation	20380
+24820	No	Complete Response	0	Postmenopausal				
+17155	Yes	Progressive Disease	2	Postmenopausal	UBERON:0000029	Distant	Convincing Image (i.e. CT/PET/MRI)	

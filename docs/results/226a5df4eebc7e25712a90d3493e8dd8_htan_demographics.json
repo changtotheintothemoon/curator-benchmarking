@@ -1,0 +1,23 @@
+{
+  "experiment_id": "226a5df4eebc7e25712a90d3493e8dd8",
+  "task_name": "htan_demographics",
+  "task_hash": "4ebf1bae236c44090c3ae0ed3b0b2e67",
+  "model_id": "anthropic/claude-3.5-sonnet",
+  "system_instructions": "You are a metadata curation assistant. Your task is to help improve and correct metadata \naccording to the specific instructions provided for each task. Be precise, accurate, and \nfollow the guidelines carefully.\n",
+  "temperature": 0.0,
+  "thinking": false,
+  "tools": [],
+  "timestamp": "2026-02-16T09:58:39.167239",
+  "task_result": {
+    "task_name": "htan_demographics",
+    "error": "OpenRouter API key not found. Please set OPENROUTER_API_KEY environment variable or add it to .aws/creds.yaml",
+    "metrics": {
+      "total_samples": 0,
+      "successful_runs": 0,
+      "failed_runs": 0,
+      "success_rate": 0,
+      "average_score": null
+    },
+    "duration_seconds": 0
+  }
+}
