@@ -1,11 +1,21 @@
-AGE_IN_DAYS_AT_DIAGNOSIS	AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS	AJCC_STAGING_SYSTEM_EDITION	CLINICAL_M_STAGE	CLINICAL_N_STAGE	CLINICAL_T_STAGE	LAST_KNOWN_DISEASE_STATUS	METASTASIS_AT_DIAGNOSIS	METHOD_OF_DIAGNOSIS	PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID	TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE	TUMOR_CLASSIFICATION_CATEGORY	TUMOR_GRADE
-18250	18500	7th	M0	N1	T2	Tumor Free	Non-metastatic (confirmed)	Biopsy	C4908	UBERON:0000992	Primary	G2 Intermediate Grade
-21900	22000	8th	M1a	N2a	T3a	With Tumor	Metastatic	Surgical Resection	C9132	UBERON:0002097	Metastatic	G3 High Grade
--1	15000	6th	MX	N0	T1	Unknown	Unknown	Fine Needle Aspiration	C3493	UBERON:0001255	Primary	Not Reported
-25550	25600	7th	M0	N1b	T2a	Tumor Free	Non-metastatic (unconfirmed)	Core Biopsy	C7377	UBERON:0000310	Recurrent	G1 Low Grade
-16425	16800	5th	M1	N3	T4	With Tumor	Metastatic	Histopathology	C3058	UBERON:0001153	Primary	G4 Anaplastic
-22500	23000	8th	M0	N2b	T3b	Tumor Free	Non-metastatic (confirmed)	Excisional Biopsy	C8294	UBERON:0002113	Primary	G2 Intermediate Grade
-19800	20100	8th	M1b	N1a	T2b	With Tumor	Metastatic	Biopsy	C4872	UBERON:0001043	Metastatic	G3 High Grade
-18000	18200	7th	M0	N0	T1a	Tumor Free	Non-metastatic (confirmed)	Incisional Biopsy	C3512	UBERON:0000955	Primary	G1 Low Grade
--1	14500	6th	MX	NX	TX	Not Reported	Unknown	Not Reported	C9133	UBERON:0001264	Unknown	GX Grade Cannot Be Assessed
-23000	23500	8th	M1c	N2c	T4a	Distant Metastasis	Metastatic	Imaging Technique	C3510	UBERON:0002048	Metastatic	G3 High Grade
+PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID	AGE_IN_DAYS_AT_DIAGNOSIS	TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE	TUMOR_GRADE	CLINICAL_T_STAGE	CLINICAL_N_STAGE	CLINICAL_M_STAGE	AJCC_STAGING_SYSTEM_EDITION	AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS	LAST_KNOWN_DISEASE_STATUS	TUMOR_CLASSIFICATION_CATEGORY	METASTASIS_AT_DIAGNOSIS	METHOD_OF_DIAGNOSIS
+C4908	18250	UBERON:0000992	G3 High Grade	T2	N1	M0	8th	18615	With Tumor	Primary	Non-metastatic (confirmed)	Biopsy
+C2926	21900	UBERON:0002097	G2 Intermediate Grade	T3a	N0	M0	8th	22265	Tumor Free	Primary	Non-metastatic (confirmed)	Surgical Resection
+C7771	16425	UBERON:0001255	G3 High Grade	T1a	N0	M0	8th	16790	With Tumor	Primary	Non-metastatic (confirmed)	Core Biopsy
+C3493	25550	UBERON:0000059	G2 Intermediate Grade	T2a	N0	M0	7th	25915	Tumor Free	Primary	Non-metastatic (confirmed)	Colonoscopy
+C9145	19345	UBERON:0002367	G4 Anaplastic	T4	N2	M0	8th	19710	With Tumor	Primary	Non-metastatic (confirmed)	Biopsy
+C3510	22630	UBERON:0002113	G1 Low Grade	T1	N0	M0	7th	22995	Tumor Free	Primary	Non-metastatic (confirmed)	Endoscopy
+C7431	17885	UBERON:0000473	G3 High Grade	T2b	N1a	M0	8th	18250	With Tumor	Primary	Non-metastatic (confirmed)	Fine Needle Aspiration
+C4017	24455	UBERON:0002370	G2 Intermediate Grade	T3	N1	M0	8th	24820	Tumor Free	Primary	Non-metastatic (confirmed)	Surgical Resection
+C9385	20075	UBERON:0001255	G3 High Grade	T1b	N0	M0	8th	20440	With Tumor	Primary	Non-metastatic (confirmed)	Excisional Biopsy
+C3778	23360	UBERON:0002097	G2 Intermediate Grade	T2	N0	M0	7th	23725	Tumor Free	Primary	Non-metastatic (confirmed)	Surgical Resection
+C4910	18980	UBERON:0000992	G3 High Grade	T3b	N1b	M0	8th	19345	With Tumor	Primary	Non-metastatic (confirmed)	Core Biopsy
+C2926	26645	UBERON:0002097	G2 Intermediate Grade	T2a	N0	M0	8th	27010	Tumor Free	Primary	Non-metastatic (confirmed)	Surgical Resection
+C9145	15695	UBERON:0002367	G4 Anaplastic	T4a	N2a	M0	8th	16060	With Tumor	Primary	Non-metastatic (confirmed)	Biopsy
+C4908	21170	UBERON:0000992	G3 High Grade	T2b	N1	M0	8th	21535	With Tumor	Primary	Non-metastatic (confirmed)	Core Biopsy
+C3510	19710	UBERON:0002113	G1 Low Grade	T1a	N0	M0	7th	20075	Tumor Free	Primary	Non-metastatic (confirmed)	Colonoscopy
+C7771	24820	UBERON:0001255	G3 High Grade	T1b	N0	M0	8th	25185	With Tumor	Primary	Non-metastatic (confirmed)	Excisional Biopsy
+C4017	17520	UBERON:0002370	G2 Intermediate Grade	T3a	N1a	M0	8th	17885	Tumor Free	Primary	Non-metastatic (confirmed)	Surgical Resection
+C9385	22995	UBERON:0001255	G3 High Grade	T2	N0	M0	8th	23360	With Tumor	Primary	Non-metastatic (confirmed)	Core Biopsy
+C3778	20440	UBERON:0002097	G2 Intermediate Grade	T2a	N0	M0	7th	20805	Tumor Free	Primary	Non-metastatic (confirmed)	Surgical Resection
+C4910	25915	UBERON:0000992	G3 High Grade	T3b	N1b	M0	8th	26280	With Tumor	Primary	Non-metastatic (confirmed)	Core Biopsy
