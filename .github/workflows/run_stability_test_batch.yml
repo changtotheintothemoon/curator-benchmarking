@@ -1,0 +1,216 @@
+name: Run Batch Stability Test
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  run-batch-stability-test:
+    if: |
+      contains(join(github.event.issue.labels.*.name, ','), 'batch-stability-test') ||
+      startsWith(github.event.issue.title, '[Batch Stability Test]') ||
+      (contains(join(github.event.issue.labels.*.name, ','), 'stability-test') && contains(github.event.issue.body, 'tasks:'))
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run batch stability test
+        id: batch-stability-test
+        env:
+          AWS_BEARER_TOKEN_BEDROCK: ${{ secrets.AWS_BEARER_TOKEN_BEDROCK }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python -m src.stability_runner_batch "${{ github.event.issue.body }}" "${{ github.event.issue.number }}"
+
+      - name: Comment batch stability results on issue
+        uses: actions/github-script@v7
+        if: always()
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+
+            const testOutcome = '${{ steps.batch-stability-test.outcome }}';
+            const testSuccess = testOutcome === 'success';
+
+            let comment = '## Batch Stability Test Results\n\n';
+
+            if (!testSuccess) {
+              comment += `❌ Batch stability test failed!\n\n`;
+              comment += `The test step exited with an error. Please check the workflow logs for details.\n\n`;
+              comment += `**Workflow run:** ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\n`;
+            } else {
+              // Read batch summary
+              const resultsDir = path.join(process.cwd(), 'docs', 'results');
+              const summaryPath = path.join(resultsDir, 'batch_stability_summary.json');
+
+              if (fs.existsSync(summaryPath)) {
+                const summary = JSON.parse(fs.readFileSync(summaryPath, 'utf8'));
+
+                comment += `✅ Batch stability test completed!\n\n`;
+                comment += `**Model:** ${summary.model}\n`;
+                comment += `**Tasks:** ${summary.successful_tasks}/${summary.total_tasks} successful\n`;
+                comment += `**Runs per task:** ${summary.num_runs_per_task}\n\n`;
+
+                if (summary.failed_tasks > 0) {
+                  comment += `⚠️ **${summary.failed_tasks} task(s) failed**\n\n`;
+                }
+
+                // Sort results by score
+                const resultsArray = Object.entries(summary.results)
+                  .filter(([task, result]) => result.score && result.score.mean !== undefined)
+                  .sort((a, b) => b[1].score.mean - a[1].score.mean);
+
+                if (resultsArray.length > 0) {
+                  comment += `### Results Summary (sorted by score)\n\n`;
+                  comment += `| Task | Score | F1 | Precision | Recall | Stability |\n`;
+                  comment += `|------|-------|----|-----------|---------|-----------|\n`;
+
+                  for (const [taskName, result] of resultsArray) {
+                    const score = result.score ? result.score.mean.toFixed(3) : 'N/A';
+                    const f1 = result.f1 ? result.f1.mean.toFixed(3) : 'N/A';
+                    const prec = result.precision ? result.precision.mean.toFixed(3) : 'N/A';
+                    const rec = result.recall ? result.recall.mean.toFixed(3) : 'N/A';
+
+                    // Stability indicator based on std dev
+                    let stability = '✅';
+                    if (result.score && result.score.std > 0.10) {
+                      stability = '❗';
+                    } else if (result.score && result.score.std > 0.05) {
+                      stability = '⚠️';
+                    }
+
+                    comment += `| \`${taskName}\` | ${score} | ${f1} | ${prec} | ${rec} | ${stability} |\n`;
+                  }
+
+                  comment += `\n**Stability Legend:** ✅ Highly stable (std < 0.05) | ⚠️ Moderate (0.05-0.10) | ❗ Low (> 0.10)\n\n`;
+                }
+
+                // Add failed tasks if any
+                const failedTasks = Object.entries(summary.results)
+                  .filter(([task, result]) => result.num_runs_completed === 0);
+
+                if (failedTasks.length > 0) {
+                  comment += `\n### Failed Tasks\n\n`;
+                  for (const [taskName, result] of failedTasks) {
+                    comment += `- ❌ \`${taskName}\`: ${result.error || 'Unknown error'}\n`;
+                  }
+                  comment += `\n`;
+                }
+
+                // Detailed results section (expandable)
+                comment += `\n<details>\n<summary>📊 Detailed Metrics (click to expand)</summary>\n\n`;
+
+                for (const [taskName, result] of resultsArray.slice(0, 10)) {  // Top 10 tasks
+                  comment += `\n#### ${taskName}\n\n`;
+
+                  if (result.score) {
+                    comment += `**Score:**\n`;
+                    comment += `- Mean: ${result.score.mean.toFixed(4)} ± ${result.score.std.toFixed(4)}\n`;
+                    comment += `- 95% CI: [${result.score.ci_lower.toFixed(4)}, ${result.score.ci_upper.toFixed(4)}]\n`;
+                    comment += `- Range: [${result.score.min.toFixed(4)}, ${result.score.max.toFixed(4)}]\n\n`;
+                  }
+
+                  if (result.f1) {
+                    comment += `**F1:** ${result.f1.mean.toFixed(4)} ± ${result.f1.std.toFixed(4)}\n`;
+                    comment += `**Precision:** ${result.precision.mean.toFixed(4)} ± ${result.precision.std.toFixed(4)}\n`;
+                    comment += `**Recall:** ${result.recall.mean.toFixed(4)} ± ${result.recall.std.toFixed(4)}\n\n`;
+                  }
+
+                  if (result.confidence) {
+                    comment += `**Confidence:** ${result.confidence.mean.toFixed(4)} ± ${result.confidence.std.toFixed(4)}\n\n`;
+                  }
+
+                  comment += `**Completed:** ${result.num_runs_completed}/${result.num_runs_attempted} runs\n\n`;
+                }
+
+                comment += `\n</details>\n\n`;
+                comment += `**Individual task results saved to:** \`docs/results/stability_*.json\`\n`;
+                comment += `**Batch summary saved to:** \`docs/results/batch_stability_summary.json\`\n`;
+
+              } else {
+                comment += `⚠️ Batch summary file not found at: \`docs/results/batch_stability_summary.json\`\n`;
+              }
+            }
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });
+
+      - name: Close issue
+        uses: actions/github-script@v7
+        if: steps.batch-stability-test.outcome == 'success'
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.rest.issues.update({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'closed'
+            });
+
+      - name: Commit and push results
+        if: steps.batch-stability-test.outcome == 'success'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          # Add stability results
+          git add docs/results/
+
+          # Check if there are changes to commit
+          if ! git diff --staged --quiet; then
+            git commit -m "Save batch stability test results [skip ci]"
+
+            # Retry push with exponential backoff
+            max_retries=3
+            retry_count=0
+            while [ $retry_count -lt $max_retries ]; do
+              if git push origin main; then
+                echo "✅ Batch stability results committed and pushed"
+                break
+              else
+                retry_count=$((retry_count + 1))
+                if [ $retry_count -lt $max_retries ]; then
+                  echo "⚠️ Push failed, retrying (attempt $retry_count/$max_retries)..."
+                  sleep $((retry_count * 2))
+                  git pull --rebase origin main || git pull origin main || true
+                  git add docs/results/
+                  git commit --amend --no-edit || git commit -m "Save batch stability test results [skip ci]"
+                else
+                  echo "❌ Failed to push after $max_retries attempts"
+                  exit 1
+                fi
+              fi
+            done
+          else
+            echo "⚠️ No changes to commit"
+          fi
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch-stability-test-results-${{ github.event.issue.number }}
+          path: docs/results/
+          retention-days: 90
