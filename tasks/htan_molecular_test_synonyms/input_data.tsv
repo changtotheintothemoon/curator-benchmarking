@@ -1,0 +1,21 @@
+AGE_IN_DAYS_AT_MOLECULAR_TEST_START	GENE_SYMBOL	MOLECULAR_ANALYSIS_METHOD	MOLECULAR_ANALYSIS_RESULT	CLINICAL_BIOSPECIMEN_TYPE	AGE_IN_DAYS_AT_MOLECULAR_TEST_STOP	AA_CHANGE	COPY_NUMBER	EXON	TEST_RESULT	TEST_UNITS	TIMEPOINT_LABEL	VARIANT_ORIGIN	VARIANT_TYPE
+18250	BRCA1	Whole Exome Sequencing	Pos	Whole Blood	18255	V600E	2	5	1.5	ng/ml	Initial Diagnosis	Germline Mutation	Point Mutation
+21900	TP53	Next Generation Sequencing	Abnormal	FFPE	21905	R273H	1	7	2.3	ng/mL	Pre-treatment	Somatic Mutation	SNP
+15330	EGFR	Fluorescence in situ hybridization	Amp	Paraffin Embedded Tissue	15335	L858R	4	21	3.1	ng/mL	Baseline	Tumor	Amplification
+25550	KRAS	Polymerase Chain Reaction	Mut	Plasma	25555	G12D	2	2	0.8	ng/ml	Post-treatment	Somatic	Substitution Mutation
+10950	ALK	Immunohistochemistry	Overexpression	Frozen Biopsy	10955		3	20	4.2	ng/mL	Follow-up	Germline	Gene Amplification
+32850	MET	RNA-seq	High Expression	Fresh Biopsy	32855	N375S	5	14	5.6	ng/ml	End of Treatment	Somatic Mosaic Mutation	Copy Number Gain
+19710	BRAF	Targeted NGS	Positive Result	CSF	19715	V600K	2	15	1.2	ng/mL	Diagnosis	Germline Variant	Missense
+8030	RET	Sequencing	Mutation Detected	Bone Marrow Aspirate	8035	M918T	1	16	0.9	ng/ml	Pre-op	Somatic Variant	Insertion Mutation
+27740	NRAS	Real-time PCR	Mut+	Saliva Sample	27745	Q61K	2	3	2.1	ng/mL	Post-op	Germline DNA	Nucleotide Substitution
+12410	PIK3CA	WES	Abnormality	Stool Sample	12415	H1047R	3	20	3.8	ng/ml	Relapse	Tumor DNA	Deletion Mutation
+22630	ROS1	Fluorescent ISH	Rearranged	Urine Sample	22635		2	32	1.7	ng/mL	Remission	Somatic DNA	Chromosomal Rearrangement
+16790	ERBB2	IHC Staining	3+	Other Fluid	16795		6	8	4.5	ng/ml	Progression	Germline DNA Variant	Gene Duplication
+29200	KIT	Flow Cyto	Positive Expression	Cheek Swab	29205	D816V	2	17	2.9	ng/mL	Stable Disease	Somatic Origin	Missense Mutation
+14610	PDGFRA	Microarray Analysis	Gain	Whole Blood Sample	14615	D842V	4	18	3.4	ng/ml	Response	Germline Origin	Chromosomal Amplification
+20440	FGFR2	Southern Blot	Amplified	FFPE Tissue	20445	S252W	5	7	5.1	ng/mL	Complete Response	Somatic Cell	Copy Number Variation
+11680	IDH1	CGH	Copy Gain	Formalin Fixed Tissue	11685	R132H	3	4	2.6	ng/ml	Partial Response	Germline Cell	CNV
+24020	IDH2	Karyotyping	Abnormal Karyotype	Fresh Frozen Tissue	24025	R140Q	2	4	1.4	ng/mL	Progressive Disease	Tumor Origin	Chromosomal Abnormality
+17520	NF1	Microsatellite	LOH	Body Fluid	17525		1	27	0.7	ng/ml	Recurrence	Germline Tissue	Loss of Heterozygosity
+26280	APC	Immunofluorescence Staining	Nuclear Positive	Marrow	26285	R1450X	2	15	3.2	ng/mL	Second Primary	Somatic Tissue	Nonsense
+13140	VHL	Cytogenetic Analysis	Deletion Found	Blood Sample	13145		1	1	1.9	ng/ml	Metastasis	Germline Sample	Deletion Variant

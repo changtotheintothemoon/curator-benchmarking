@@ -1,0 +1,199 @@
+name: Run Stability Test
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  run-stability-test:
+    if: |
+      contains(join(github.event.issue.labels.*.name, ','), 'stability-test') ||
+      startsWith(github.event.issue.title, '[Stability Test]')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run 10-fold stability test
+        id: stability-test
+        env:
+          AWS_BEARER_TOKEN_BEDROCK: ${{ secrets.AWS_BEARER_TOKEN_BEDROCK }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python -m src.stability_runner "${{ github.event.issue.body }}" "${{ github.event.issue.number }}"
+
+      - name: Comment stability results on issue
+        uses: actions/github-script@v7
+        if: always()
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+
+            const testOutcome = '${{ steps.stability-test.outcome }}';
+            const testSuccess = testOutcome === 'success';
+
+            let comment = '## Stability Test Results (10-Fold)\n\n';
+
+            if (!testSuccess) {
+              comment += `❌ Stability test failed!\n\n`;
+              comment += `The test step exited with an error. Please check the workflow logs for details.\n\n`;
+              comment += `**Workflow run:** ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\n`;
+            } else {
+              // Read stability summary
+              const resultsDir = path.join(process.cwd(), 'docs', 'results');
+              const summaryPath = path.join(resultsDir, 'stability_summary.json');
+
+              if (fs.existsSync(summaryPath)) {
+                const summary = JSON.parse(fs.readFileSync(summaryPath, 'utf8'));
+
+                comment += `✅ Stability test completed successfully!\n\n`;
+                comment += `**Task:** ${summary.task_name}\n`;
+                comment += `**Model:** ${summary.model}\n`;
+                comment += `**Runs:** ${summary.num_runs_completed}/${summary.num_runs_attempted}\n\n`;
+
+                comment += `### Metrics (Mean ± Std Dev)\n\n`;
+
+                // Score
+                if (summary.score) {
+                  const s = summary.score;
+                  comment += `**Score:**\n`;
+                  comment += `- Mean: ${s.mean.toFixed(4)}\n`;
+                  comment += `- Std Dev: ${s.std.toFixed(4)}\n`;
+                  comment += `- 95% CI: [${s.ci_lower.toFixed(4)}, ${s.ci_upper.toFixed(4)}]\n`;
+                  comment += `- Range: [${s.min.toFixed(4)}, ${s.max.toFixed(4)}]\n\n`;
+                }
+
+                // F1
+                if (summary.f1) {
+                  const f = summary.f1;
+                  comment += `**F1 Score:**\n`;
+                  comment += `- Mean: ${f.mean.toFixed(4)}\n`;
+                  comment += `- Std Dev: ${f.std.toFixed(4)}\n`;
+                  comment += `- 95% CI: [${f.ci_lower.toFixed(4)}, ${f.ci_upper.toFixed(4)}]\n`;
+                  comment += `- Range: [${f.min.toFixed(4)}, ${f.max.toFixed(4)}]\n\n`;
+                }
+
+                // Precision
+                if (summary.precision) {
+                  const p = summary.precision;
+                  comment += `**Precision:**\n`;
+                  comment += `- Mean: ${p.mean.toFixed(4)}\n`;
+                  comment += `- Std Dev: ${p.std.toFixed(4)}\n`;
+                  comment += `- 95% CI: [${p.ci_lower.toFixed(4)}, ${p.ci_upper.toFixed(4)}]\n\n`;
+                }
+
+                // Recall
+                if (summary.recall) {
+                  const r = summary.recall;
+                  comment += `**Recall:**\n`;
+                  comment += `- Mean: ${r.mean.toFixed(4)}\n`;
+                  comment += `- Std Dev: ${r.std.toFixed(4)}\n`;
+                  comment += `- 95% CI: [${r.ci_lower.toFixed(4)}, ${r.ci_upper.toFixed(4)}]\n\n`;
+                }
+
+                // Confidence
+                if (summary.confidence) {
+                  const c = summary.confidence;
+                  comment += `**Confidence (Enum Validation Rate):**\n`;
+                  comment += `- Mean: ${c.mean.toFixed(4)}\n`;
+                  comment += `- Std Dev: ${c.std.toFixed(4)}\n`;
+                  comment += `- 95% CI: [${c.ci_lower.toFixed(4)}, ${c.ci_upper.toFixed(4)}]\n\n`;
+                }
+
+                comment += `\n**Detailed results saved to:** \`docs/results/stability_summary.json\`\n`;
+
+                // Add interpretation
+                comment += `\n### Interpretation\n\n`;
+                if (summary.score && summary.score.std < 0.05) {
+                  comment += `✅ **Highly stable**: Score std dev < 0.05 indicates consistent performance across runs.\n`;
+                } else if (summary.score && summary.score.std < 0.10) {
+                  comment += `⚠️ **Moderately stable**: Score std dev between 0.05-0.10.\n`;
+                } else if (summary.score) {
+                  comment += `❗ **Low stability**: Score std dev > 0.10 indicates significant variation between runs.\n`;
+                }
+              } else {
+                comment += `⚠️ Stability summary file not found at: \`docs/results/stability_summary.json\`\n`;
+              }
+            }
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });
+
+      - name: Close issue
+        uses: actions/github-script@v7
+        if: steps.stability-test.outcome == 'success'
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.rest.issues.update({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'closed'
+            });
+
+      - name: Commit and push results
+        if: steps.stability-test.outcome == 'success'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          # Add stability results
+          git add docs/results/
+
+          # Check if there are changes to commit
+          if ! git diff --staged --quiet; then
+            git commit -m "Save stability test results [skip ci]"
+
+            # Retry push with exponential backoff
+            max_retries=3
+            retry_count=0
+            while [ $retry_count -lt $max_retries ]; do
+              if git push origin main; then
+                echo "✅ Stability results committed and pushed to repository"
+                break
+              else
+                retry_count=$((retry_count + 1))
+                if [ $retry_count -lt $max_retries ]; then
+                  echo "⚠️ Push failed, pulling latest changes and retrying (attempt $retry_count/$max_retries)..."
+                  sleep $((retry_count * 2))
+                  git pull --rebase origin main || git pull origin main || true
+                  git add docs/results/
+                  git commit --amend --no-edit || git commit -m "Save stability test results [skip ci]"
+                else
+                  echo "❌ Failed to push after $max_retries attempts"
+                  exit 1
+                fi
+              fi
+            done
+          else
+            echo "⚠️ No changes to commit"
+          fi
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stability-test-results-${{ github.event.issue.number }}
+          path: docs/results/
+          retention-days: 90

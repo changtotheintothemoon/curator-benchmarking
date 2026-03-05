@@ -1,0 +1,21 @@
+ACQUISITION_METHOD_TYPE	AGE_IN_DAYS_AT_SPECIMEN_COLLECTION	ANALYTE_TYPE	BIOSPECIMEN_TYPE	HTAN_BIOSPECIMEN_ID	HTAN_PARENT_ID	PRESERVATION_MEDIUM	PRESERVATION_METHOD	PRESERVATION_METHOD_TEMPERATURE	SHIPPING_CONDITION_TYPE	SLICING_METHOD	SLIDE_CHARGE_TYPE	SPECIMEN_CELLULAR_ARCHITECTURE	SPECIMEN_LATERALITY
+Needle biopsy	18250	Deoxyribonucleic acid	Whole blood	HTA201_0001_B1	HTA201_0001	Formalin	Frozen	-80C				Cancer	L
+FNA	21900	Ribonucleic acid	Tissue sample	HTA202_0002_B1	HTA202_0002	FFPE block	Formalin fixed		Room temperature			Healthy	R
+Surgical removal	16425	Total ribonucleic acid	CNS tissue	HTA203_0003_B1	HTA203_0003	Snap frozen	Fresh tissue	-70C				Pre-cancer	Both
+Excision	25550	Messenger RNA	Dermal tissue	HTA204_0004_B1	HTA204_0004	Ethanol	Snap freeze		Frozen	Cryo	Positive	Dysplastic	Center
+Blood collection	14600	Cell-free DNA	Body fluid	HTA205_0005_B1	HTA205_0005	Liquid nitrogen	Freeze dried	Room temp	Cold			Combined	N/A
+Autopsy specimen	29200	MicroRNA	Bone marrow aspirate	HTA206_0006_B1	HTA206_0006	OCT compound	Paraffin embedded	-20C	Ice	Microtome	Negative		L
+Tissue biopsy	19710	Circulating tumor DNA	Cell culture	HTA207_0007_B1	HTA207_0007	RNAlater	Fresh frozen	4C	LN2	Sectioning instrument	N/A	Cancer	
+Punch	23725	Nuclear RNA	Fecal sample	HTA208_0008_B1	HTA208_0008	Buffered formalin	Frozen	-150C	Ambient	Vibrating microtome		Healthy	R
+Shave	27375	Deoxyribonucleic acid	Urine sample	HTA209_0009_B1	HTA209_0009	Formalin	Formalin fixed	Ambient				Pre-cancer	Both
+Incision	20075	Ribonucleic acid	Sputum sample	HTA210_0010_B1	HTA210_0010	FFPE block	Fresh tissue	-80C	Room temperature			Combined	Center
+Needle biopsy	22630	Total ribonucleic acid	Whole blood	HTA211_0011_B1	HTA211_0011	Ethanol	Snap freeze	-70C	Frozen			Cancer	L
+FNA	18980	Messenger RNA	Tissue sample	HTA212_0012_B1	HTA212_0012	Snap frozen	Freeze dried	Room temp	Cold	Cryo	Positive	Dysplastic	R
+Surgical removal	24820	Cell-free DNA	CNS tissue	HTA213_0013_B1	HTA213_0013	Liquid nitrogen	Paraffin embedded	-20C	Ice	Microtome	Negative	Healthy	Both
+Excision	21535	MicroRNA	Dermal tissue	HTA214_0014_B1	HTA214_0014	OCT compound	Fresh frozen	4C	LN2	Sectioning instrument	N/A	Pre-cancer	Center
+Blood collection	26280	Circulating tumor DNA	Body fluid	HTA215_0015_B1	HTA215_0015	RNAlater	Frozen	-150C	Ambient	Vibrating microtome		Cancer	N/A
+Autopsy specimen	17885	Nuclear RNA	Bone marrow aspirate	HTA216_0016_B1	HTA216_0016	Buffered formalin	Formalin fixed	Ambient	Room temperature			Combined	L
+Tissue biopsy	28470	Deoxyribonucleic acid	Cell culture	HTA217_0017_B1	HTA217_0017	Formalin	Fresh tissue	-80C	Frozen			Dysplastic	R
+Punch	19345	Ribonucleic acid	Fecal sample	HTA218_0018_B1	HTA218_0018	FFPE block	Snap freeze	-70C	Cold	Cryo	Positive	Healthy	Both
+Shave	23360	Total ribonucleic acid	Urine sample	HTA219_0019_B1	HTA219_0019	Ethanol	Freeze dried	Room temp	Ice	Microtome	Negative	Pre-cancer	Center
+Incision	20805	Messenger RNA	Sputum sample	HTA220_0020_B1	HTA220_0020	Snap frozen	Paraffin embedded	-20C	LN2	Sectioning instrument	N/A	Cancer	L
