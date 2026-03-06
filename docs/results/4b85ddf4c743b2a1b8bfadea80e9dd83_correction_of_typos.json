@@ -1,0 +1,343 @@
+{
+  "experiment_id": "4b85ddf4c743b2a1b8bfadea80e9dd83",
+  "task_name": "correction_of_typos",
+  "task_hash": "db0f6635c9e87138b227a3827530495a",
+  "model_id": "claude-sonnet-4-5-20250929",
+  "system_instructions": "You are a metadata curation assistant. Your task is to help improve and correct metadata \naccording to the specific instructions provided for each task. Be precise, accurate, and \nfollow the guidelines carefully.\n",
+  "temperature": 0.0,
+  "thinking": false,
+  "tools": [],
+  "timestamp": "2026-03-06T04:19:57.736049",
+  "task_result": {
+    "task_name": "correction_of_typos",
+    "num_samples": 10,
+    "results": [
+      {
+        "sample_index": 0,
+        "input": {
+          "diagnosis": "neruofibromatosis type 1",
+          "assay": "whole exme squencing",
+          "tumorType": "Plexifform Neurofibroma"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "claude-sonnet-4-5-20250929",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "diagnosis": "Neurofibromatosis type 1",
+          "assay": "whole exome sequencing",
+          "tumorType": "Plexiform Neurofibroma"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 1,
+        "input": {
+          "diagnosis": "neurofibromatosis type !",
+          "assay": "whole exme seq",
+          "tumorType": "Malignant Periferal Nerve Sheath Tumor"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "claude-sonnet-4-5-20250929",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "diagnosis": "Neurofibromatosis type 1",
+          "assay": "whole exome sequencing",
+          "tumorType": "Malignant Peripheral Nerve Sheath Tumor"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 2,
+        "input": {
+          "diagnosis": "neurofibromatisis type 1",
+          "assay": "whle genome squencing",
+          "tumorType": "Maliggnant Peripheral Nerve Sheath Tumor"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "claude-sonnet-4-5-20250929",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "diagnosis": "Neurofibromatosis type 1",
+          "assay": "whole genome sequencing",
+          "tumorType": "Malignant Peripheral Nerve Sheath Tumor"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 3,
+        "input": {
+          "diagnosis": "FN1",
+          "assay": "conventonal MRI",
+          "tumorType": "unknwon"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "claude-sonnet-4-5-20250929",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "diagnosis": "Neurofibromatosis type 1",
+          "assay": "conventional MRI",
+          "tumorType": "Unknown"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 4,
+        "input": {
+          "diagnosis": "Not Aplicabble",
+          "assay": "immunohistochemsitry",
+          "tumorType": "Cutaneous Neuroffibroma"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "claude-sonnet-4-5-20250929",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "diagnosis": "Not Applicable",
+          "assay": "immunohistochemistry",
+          "tumorType": "Cutaneous Neurofibroma"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 5,
+        "input": {
+          "diagnosis": "meurofibromatosis type 1",
+          "assay": "cell viabilty assay",
+          "tumorType": "Cutaneous Neurfibromaa"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "claude-sonnet-4-5-20250929",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "diagnosis": "Neurofibromatosis type 1",
+          "assay": "cell viability assay",
+          "tumorType": "Cutaneous Neurofibroma"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 6,
+        "input": {
+          "diagnosis": "neurofbiromatosis tpye 2",
+          "assay": "immunocytochemsitry",
+          "tumorType": "Cutanneous Neurofibroma"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "claude-sonnet-4-5-20250929",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "diagnosis": "Neurofibromatosis type 1",
+          "assay": "immunocytochemistry",
+          "tumorType": "Cutaneous Neurofibroma"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 7,
+        "input": {
+          "diagnosis": "Neurofibromatosis type 47",
+          "assay": "conventioal MRI",
+          "tumorType": "un known"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "claude-sonnet-4-5-20250929",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "diagnosis": "Neurofibromatosis type 1",
+          "assay": "conventional MRI",
+          "tumorType": "Unknown"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 8,
+        "input": {
+          "diagnosis": "NF@-related schwannomatosis",
+          "assay": "RNA-seque",
+          "tumorType": "Schwannomaa"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "claude-sonnet-4-5-20250929",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "diagnosis": "NF2-related schwannomatosis",
+          "assay": "RNA-seq",
+          "tumorType": "schwannoma"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 9,
+        "input": {
+          "diagnosis": "nf1",
+          "assay": "#D microtissue viability",
+          "tumorType": "Malignant Peripheral Nerve Sheath Tumorr"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "claude-sonnet-4-5-20250929",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "diagnosis": "Neurofibromatosis type 1",
+          "assay": "3D microtissue viability",
+          "tumorType": "Malignant Peripheral Nerve Sheath Tumor"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      }
+    ],
+    "metrics": {
+      "total_samples": 10,
+      "successful_runs": 0,
+      "failed_runs": 10,
+      "success_rate": 0.0,
+      "average_score": null,
+      "min_score": null,
+      "max_score": null,
+      "num_scored": 0
+    },
+    "duration_seconds": 0.21847057342529297,
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0
+    }
+  }
+}

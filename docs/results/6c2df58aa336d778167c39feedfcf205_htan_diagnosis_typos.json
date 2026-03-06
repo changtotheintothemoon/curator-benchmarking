@@ -1,0 +1,1053 @@
+{
+  "experiment_id": "6c2df58aa336d778167c39feedfcf205",
+  "task_name": "htan_diagnosis_typos",
+  "task_hash": "5266d3127c2c62fb55bd3c1727fd7cec",
+  "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "system_instructions": "You are a metadata curation assistant. Your task is to help improve and correct metadata \naccording to the specific instructions provided for each task. Be precise, accurate, and \nfollow the guidelines carefully.\n",
+  "temperature": 0.0,
+  "thinking": false,
+  "tools": [],
+  "timestamp": "2026-03-06T04:12:26.254912",
+  "task_result": {
+    "task_name": "htan_diagnosis_typos",
+    "num_samples": 20,
+    "results": [
+      {
+        "sample_index": 0,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 18250,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 18615,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N1",
+          "CLINICAL_T_STAGE": "T2a",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (confirmed)",
+          "METHOD_OF_DIAGNOSIS": "Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C4908",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0000992",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G2 Intermediate Grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 18250,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 18615,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N1",
+          "CLINICAL_T_STAGE": "T2a",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (confirmed)",
+          "METHOD_OF_DIAGNOSIS": "Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C4908",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0000992",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G2 Intermediate Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 1,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 21900,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 22100,
+          "AJCC_STAGING_SYSTEM_EDITION": "eigth",
+          "CLINICAL_M_STAGE": "M1a",
+          "CLINICAL_N_STAGE": "N2",
+          "CLINICAL_T_STAGE": "T3a",
+          "LAST_KNOWN_DISEASE_STATUS": "With Tumor",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Core Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C3493",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001153",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatic",
+          "TUMOR_GRADE": "G3 High Grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 21900,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 22100,
+          "AJCC_STAGING_SYSTEM_EDITION": "8th",
+          "CLINICAL_M_STAGE": "M1a",
+          "CLINICAL_N_STAGE": "N2",
+          "CLINICAL_T_STAGE": "T3a",
+          "LAST_KNOWN_DISEASE_STATUS": "With Tumor",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Core Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C3493",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001153",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatic",
+          "TUMOR_GRADE": "G3 High Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 2,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 15330,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 15700,
+          "AJCC_STAGING_SYSTEM_EDITION": "6TH",
+          "CLINICAL_M_STAGE": "m0",
+          "CLINICAL_N_STAGE": "N0",
+          "CLINICAL_T_STAGE": "T1a",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor free",
+          "METASTASIS_AT_DIAGNOSIS": "non-metastatic (confirmed)",
+          "METHOD_OF_DIAGNOSIS": "Fine Needle Aspiration",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C7377",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0002367",
+          "TUMOR_CLASSIFICATION_CATEGORY": "primary",
+          "TUMOR_GRADE": "G1 low grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 15330,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 15700,
+          "AJCC_STAGING_SYSTEM_EDITION": "6th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N0",
+          "CLINICAL_T_STAGE": "T1a",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (confirmed)",
+          "METHOD_OF_DIAGNOSIS": "Fine Needle Aspiration",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C7377",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0002367",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G1 Low Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 3,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 25550,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 25920,
+          "AJCC_STAGING_SYSTEM_EDITION": "5th",
+          "CLINICAL_M_STAGE": "M1b",
+          "CLINICAL_N_STAGE": "n1a",
+          "CLINICAL_T_STAGE": "T2b",
+          "LAST_KNOWN_DISEASE_STATUS": "Distant Metastasis",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Excisional Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C9145",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001255",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Recurrent",
+          "TUMOR_GRADE": "G3 high Grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 25550,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 25920,
+          "AJCC_STAGING_SYSTEM_EDITION": "5th",
+          "CLINICAL_M_STAGE": "M1b",
+          "CLINICAL_N_STAGE": "N1a",
+          "CLINICAL_T_STAGE": "T2b",
+          "LAST_KNOWN_DISEASE_STATUS": "Distant Metastasis",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Excisional Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C9145",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001255",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Recurrent",
+          "TUMOR_GRADE": "G3 High Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 4,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 19710,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 20075,
+          "AJCC_STAGING_SYSTEM_EDITION": " 7th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N1b",
+          "CLINICAL_T_STAGE": "t2a",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (unconfirmed)",
+          "METHOD_OF_DIAGNOSIS": "Incisional Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C4908",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0000310",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G2 Intermediate grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 19710,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 20075,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N1b",
+          "CLINICAL_T_STAGE": "T2a",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (unconfirmed)",
+          "METHOD_OF_DIAGNOSIS": "Incisional Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C4908",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0000310",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G2 Intermediate Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 5,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 22800,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 23165,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th ",
+          "CLINICAL_M_STAGE": "MX",
+          "CLINICAL_N_STAGE": "N2a",
+          "CLINICAL_T_STAGE": "T3b",
+          "LAST_KNOWN_DISEASE_STATUS": "Unknown",
+          "METASTASIS_AT_DIAGNOSIS": "Unknown",
+          "METHOD_OF_DIAGNOSIS": "Surgical Resection",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C3493",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001153",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatc",
+          "TUMOR_GRADE": "GX Grade Cannot Be Assessed"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 22800,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 23165,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "MX",
+          "CLINICAL_N_STAGE": "N2a",
+          "CLINICAL_T_STAGE": "T3b",
+          "LAST_KNOWN_DISEASE_STATUS": "Unknown",
+          "METASTASIS_AT_DIAGNOSIS": "Unknown",
+          "METHOD_OF_DIAGNOSIS": "Surgical Resection",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C3493",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001153",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatic",
+          "TUMOR_GRADE": "GX Grade Cannot Be Assessed"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 6,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 17885,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 18250,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M1c",
+          "CLINICAL_N_STAGE": "N3",
+          "CLINICAL_T_STAGE": "T4a",
+          "LAST_KNOWN_DISEASE_STATUS": "With Tumor",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Histopathology",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C7377",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0002367",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Progression",
+          "TUMOR_GRADE": "G4 Anaplastic"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 17885,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 18250,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M1c",
+          "CLINICAL_N_STAGE": "N3",
+          "CLINICAL_T_STAGE": "T4a",
+          "LAST_KNOWN_DISEASE_STATUS": "With Tumor",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Histopathology",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C7377",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0002367",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Progression",
+          "TUMOR_GRADE": "G4 Anaplastic"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 7,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 20440,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 20805,
+          "AJCC_STAGING_SYSTEM_EDITION": "8th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N0 (i+)",
+          "CLINICAL_T_STAGE": "T1b",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (confirmed)",
+          "METHOD_OF_DIAGNOSIS": "Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C9145",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001255",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Synchronous Primary",
+          "TUMOR_GRADE": "GB Borderline"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 20440,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 20805,
+          "AJCC_STAGING_SYSTEM_EDITION": "8th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N0 (i+)",
+          "CLINICAL_T_STAGE": "T1b",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (confirmed)",
+          "METHOD_OF_DIAGNOSIS": "Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C9145",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001255",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Synchronous Primary",
+          "TUMOR_GRADE": "GB Borderline"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 8,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 16790,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 17155,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M1a",
+          "CLINICAL_N_STAGE": "N1c",
+          "CLINICAL_T_STAGE": "T2c",
+          "LAST_KNOWN_DISEASE_STATUS": "Distant Metastasis",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Laparoscopy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C4908",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0000992",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatic",
+          "TUMOR_GRADE": "G3 High Grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 16790,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 17155,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M1a",
+          "CLINICAL_N_STAGE": "N1c",
+          "CLINICAL_T_STAGE": "T2c",
+          "LAST_KNOWN_DISEASE_STATUS": "Distant Metastasis",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Laparoscopy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C4908",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0000992",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatic",
+          "TUMOR_GRADE": "G3 High Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 9,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 24820,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 25185,
+          "AJCC_STAGING_SYSTEM_EDITION": "6th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N2b",
+          "CLINICAL_T_STAGE": "T3c",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (confirmed)",
+          "METHOD_OF_DIAGNOSIS": "Laparotomy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C3493",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001153",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G1 Low Grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 24820,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 25185,
+          "AJCC_STAGING_SYSTEM_EDITION": "6th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N2b",
+          "CLINICAL_T_STAGE": "T3c",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (confirmed)",
+          "METHOD_OF_DIAGNOSIS": "Laparotomy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C3493",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001153",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G1 Low Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 10,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 18980,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 19345,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M1b",
+          "CLINICAL_N_STAGE": "N3a",
+          "CLINICAL_T_STAGE": "T4b",
+          "LAST_KNOWN_DISEASE_STATUS": "With Tumor",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Diagnostic Imaging",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C7377",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0002367",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatic",
+          "TUMOR_GRADE": "G3 High Grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 18980,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 19345,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M1b",
+          "CLINICAL_N_STAGE": "N3a",
+          "CLINICAL_T_STAGE": "T4b",
+          "LAST_KNOWN_DISEASE_STATUS": "With Tumor",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Diagnostic Imaging",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C7377",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0002367",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatic",
+          "TUMOR_GRADE": "G3 High Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 11,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 21535,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 21900,
+          "AJCC_STAGING_SYSTEM_EDITION": "8th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N0 (i-)",
+          "CLINICAL_T_STAGE": "T1c",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (confirmed)",
+          "METHOD_OF_DIAGNOSIS": "Pap Smear",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C9145",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001255",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G2 Intermediate Grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 21535,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 21900,
+          "AJCC_STAGING_SYSTEM_EDITION": "8th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N0 (i-)",
+          "CLINICAL_T_STAGE": "T1c",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (confirmed)",
+          "METHOD_OF_DIAGNOSIS": "Pap Smear",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C9145",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001255",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G2 Intermediate Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 12,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 19345,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 19710,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "MX",
+          "CLINICAL_N_STAGE": "N1mi",
+          "CLINICAL_T_STAGE": "T2d",
+          "LAST_KNOWN_DISEASE_STATUS": "Unknown",
+          "METASTASIS_AT_DIAGNOSIS": "Unknown",
+          "METHOD_OF_DIAGNOSIS": "Physical Examination",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C4908",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0000992",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Prior Primary",
+          "TUMOR_GRADE": "GX Grade Cannot Be Assessed"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 19345,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 19710,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "MX",
+          "CLINICAL_N_STAGE": "N1mi",
+          "CLINICAL_T_STAGE": "T2d",
+          "LAST_KNOWN_DISEASE_STATUS": "Unknown",
+          "METASTASIS_AT_DIAGNOSIS": "Unknown",
+          "METHOD_OF_DIAGNOSIS": "Physical Examination",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C4908",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0000992",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Prior Primary",
+          "TUMOR_GRADE": "GX Grade Cannot Be Assessed"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 13,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 23725,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 24090,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M1c",
+          "CLINICAL_N_STAGE": "N2c",
+          "CLINICAL_T_STAGE": "T3d",
+          "LAST_KNOWN_DISEASE_STATUS": "Distant Metastasis",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Ultrasound Guided Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C3493",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001153",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatic",
+          "TUMOR_GRADE": "G4 Anaplastic"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 23725,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 24090,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M1c",
+          "CLINICAL_N_STAGE": "N2c",
+          "CLINICAL_T_STAGE": "T3d",
+          "LAST_KNOWN_DISEASE_STATUS": "Distant Metastasis",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Ultrasound Guided Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C3493",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001153",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatic",
+          "TUMOR_GRADE": "G4 Anaplastic"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 14,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 17520,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 17885,
+          "AJCC_STAGING_SYSTEM_EDITION": "8th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N3b",
+          "CLINICAL_T_STAGE": "T4c",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (confirmed)",
+          "METHOD_OF_DIAGNOSIS": "Cystoscopy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C7377",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0002367",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G1 Low Grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 17520,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 17885,
+          "AJCC_STAGING_SYSTEM_EDITION": "8th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N3b",
+          "CLINICAL_T_STAGE": "T4c",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (confirmed)",
+          "METHOD_OF_DIAGNOSIS": "Cystoscopy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C7377",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0002367",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G1 Low Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 15,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 22435,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 22800,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M1a",
+          "CLINICAL_N_STAGE": "N3c",
+          "CLINICAL_T_STAGE": "T4d",
+          "LAST_KNOWN_DISEASE_STATUS": "With Tumor",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Bone Marrow Aspirate",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C9145",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001255",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatic",
+          "TUMOR_GRADE": "G3 High Grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 22435,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 22800,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M1a",
+          "CLINICAL_N_STAGE": "N3c",
+          "CLINICAL_T_STAGE": "T4d",
+          "LAST_KNOWN_DISEASE_STATUS": "With Tumor",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Bone Marrow Aspirate",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C9145",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001255",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatic",
+          "TUMOR_GRADE": "G3 High Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 16,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 20075,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 20440,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N4",
+          "CLINICAL_T_STAGE": "TX",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (unconfirmed)",
+          "METHOD_OF_DIAGNOSIS": "Blood Sample",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C4908",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0000992",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G2 Intermediate Grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 20075,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 20440,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N4",
+          "CLINICAL_T_STAGE": "TX",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (unconfirmed)",
+          "METHOD_OF_DIAGNOSIS": "Blood Sample",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C4908",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0000992",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G2 Intermediate Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 17,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 24455,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 24820,
+          "AJCC_STAGING_SYSTEM_EDITION": "8th",
+          "CLINICAL_M_STAGE": "M1b",
+          "CLINICAL_N_STAGE": "NX",
+          "CLINICAL_T_STAGE": "Ta",
+          "LAST_KNOWN_DISEASE_STATUS": "Distant Metastasis",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Autopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C3493",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001153",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatic",
+          "TUMOR_GRADE": "G3 High Grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 24455,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 24820,
+          "AJCC_STAGING_SYSTEM_EDITION": "8th",
+          "CLINICAL_M_STAGE": "M1b",
+          "CLINICAL_N_STAGE": "NX",
+          "CLINICAL_T_STAGE": "Ta",
+          "LAST_KNOWN_DISEASE_STATUS": "Distant Metastasis",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Autopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C3493",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001153",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatic",
+          "TUMOR_GRADE": "G3 High Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 18,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 18615,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 18980,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N0 (mol+)",
+          "CLINICAL_T_STAGE": "Tis",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (confirmed)",
+          "METHOD_OF_DIAGNOSIS": "Dilation and Curettage",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C7377",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0002367",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G1 Low Grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 18615,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 18980,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N0 (mol+)",
+          "CLINICAL_T_STAGE": "Tis",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (confirmed)",
+          "METHOD_OF_DIAGNOSIS": "Dilation and Curettage",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C7377",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0002367",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G1 Low Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 19,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 23360,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 23725,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "MX",
+          "CLINICAL_N_STAGE": "N0 (mol-)",
+          "CLINICAL_T_STAGE": "T1",
+          "LAST_KNOWN_DISEASE_STATUS": "Unknown",
+          "METASTASIS_AT_DIAGNOSIS": "Unknown",
+          "METHOD_OF_DIAGNOSIS": "Enucleation",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C9145",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001255",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Premalignant",
+          "TUMOR_GRADE": "GX Grade Cannot Be Assessed"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 23360,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 23725,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "MX",
+          "CLINICAL_N_STAGE": "N0 (mol-)",
+          "CLINICAL_T_STAGE": "T1",
+          "LAST_KNOWN_DISEASE_STATUS": "Unknown",
+          "METASTASIS_AT_DIAGNOSIS": "Unknown",
+          "METHOD_OF_DIAGNOSIS": "Enucleation",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C9145",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001255",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Premalignant",
+          "TUMOR_GRADE": "GX Grade Cannot Be Assessed"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      }
+    ],
+    "metrics": {
+      "total_samples": 20,
+      "successful_runs": 0,
+      "failed_runs": 20,
+      "success_rate": 0.0,
+      "average_score": null,
+      "min_score": null,
+      "max_score": null,
+      "num_scored": 0
+    },
+    "duration_seconds": 0.43938446044921875,
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,543 @@
+{
+  "experiment_id": "afc77c7e72f8c02128717b560c85d6d3",
+  "task_name": "htan_diagnosis_imputation",
+  "task_hash": "003dbbe8482a7739356c97cbffd1b4ec",
+  "model_id": "us.deepseek.r1-v1:0",
+  "system_instructions": "### Temperature\n\n1.0",
+  "temperature": 1.0,
+  "thinking": false,
+  "tools": [],
+  "timestamp": "2026-03-06T04:19:07.859010",
+  "task_result": {
+    "task_name": "htan_diagnosis_imputation",
+    "num_samples": 10,
+    "results": [
+      {
+        "sample_index": 0,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": "18250",
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 18500.0,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N1",
+          "CLINICAL_T_STAGE": "T2",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (confirmed)",
+          "METHOD_OF_DIAGNOSIS": "Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C4908",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0000992",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G2 Intermediate Grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.deepseek.r1-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 18250,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 18500,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N1",
+          "CLINICAL_T_STAGE": "T2",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (confirmed)",
+          "METHOD_OF_DIAGNOSIS": "Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C4908",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0000992",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G2 Intermediate Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 1,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": "21900",
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 22000.0,
+          "AJCC_STAGING_SYSTEM_EDITION": "8th",
+          "CLINICAL_M_STAGE": "M1a",
+          "CLINICAL_N_STAGE": "N2a",
+          "CLINICAL_T_STAGE": "T3a",
+          "LAST_KNOWN_DISEASE_STATUS": "With Tumor",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Surgical Resection",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C9132",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0002097",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatic",
+          "TUMOR_GRADE": "G3 High Grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.deepseek.r1-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 21900,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 22000,
+          "AJCC_STAGING_SYSTEM_EDITION": "8th",
+          "CLINICAL_M_STAGE": "M1a",
+          "CLINICAL_N_STAGE": "N2a",
+          "CLINICAL_T_STAGE": "T3a",
+          "LAST_KNOWN_DISEASE_STATUS": "With Tumor",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Surgical Resection",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C9132",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0002097",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatic",
+          "TUMOR_GRADE": "G3 High Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 2,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": "-1",
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 15000.0,
+          "AJCC_STAGING_SYSTEM_EDITION": "6th",
+          "CLINICAL_M_STAGE": "MX",
+          "CLINICAL_N_STAGE": "N0",
+          "CLINICAL_T_STAGE": "T1",
+          "LAST_KNOWN_DISEASE_STATUS": "Unknown",
+          "METASTASIS_AT_DIAGNOSIS": "Unknown",
+          "METHOD_OF_DIAGNOSIS": "Fine Needle Aspiration",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C3493",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001255",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "Not Reported"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.deepseek.r1-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": -1,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 15000,
+          "AJCC_STAGING_SYSTEM_EDITION": "6th",
+          "CLINICAL_M_STAGE": "MX",
+          "CLINICAL_N_STAGE": "N0",
+          "CLINICAL_T_STAGE": "T1",
+          "LAST_KNOWN_DISEASE_STATUS": "Unknown",
+          "METASTASIS_AT_DIAGNOSIS": "Unknown",
+          "METHOD_OF_DIAGNOSIS": "Fine Needle Aspiration",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C3493",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001255",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "Not Reported"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 3,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": "25550",
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 25600.0,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N1b",
+          "CLINICAL_T_STAGE": "T2a",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (unconfirmed)",
+          "METHOD_OF_DIAGNOSIS": "Core Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C7377",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0000310",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Recurrent",
+          "TUMOR_GRADE": "G1 Low Grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.deepseek.r1-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 25550,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 25600,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N1b",
+          "CLINICAL_T_STAGE": "T2a",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (unconfirmed)",
+          "METHOD_OF_DIAGNOSIS": "Core Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C7377",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0000310",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Recurrent",
+          "TUMOR_GRADE": "G1 Low Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 4,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": "16425",
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 16800.0,
+          "AJCC_STAGING_SYSTEM_EDITION": "5th",
+          "CLINICAL_M_STAGE": "M1",
+          "CLINICAL_N_STAGE": "N3",
+          "CLINICAL_T_STAGE": "T4",
+          "LAST_KNOWN_DISEASE_STATUS": "With Tumor",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Histopathology",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C3058",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001153",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G4 Anaplastic"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.deepseek.r1-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 16425,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 16800,
+          "AJCC_STAGING_SYSTEM_EDITION": "5th",
+          "CLINICAL_M_STAGE": "M1",
+          "CLINICAL_N_STAGE": "N3",
+          "CLINICAL_T_STAGE": "T4",
+          "LAST_KNOWN_DISEASE_STATUS": "With Tumor",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Histopathology",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C3058",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001153",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G4 Anaplastic"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 5,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": "22,500",
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 23000.0,
+          "AJCC_STAGING_SYSTEM_EDITION": "8th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N2b",
+          "CLINICAL_T_STAGE": "T3b",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (confirmed)",
+          "METHOD_OF_DIAGNOSIS": "Excisional Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C8294",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0002113",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G2 Intermediate Grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.deepseek.r1-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 22500,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 23000,
+          "AJCC_STAGING_SYSTEM_EDITION": "8th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N2b",
+          "CLINICAL_T_STAGE": "T3b",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (confirmed)",
+          "METHOD_OF_DIAGNOSIS": "Excisional Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C8294",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0002113",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G2 Intermediate Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 6,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": "19800",
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 20100.0,
+          "AJCC_STAGING_SYSTEM_EDITION": "9th",
+          "CLINICAL_M_STAGE": "M1b",
+          "CLINICAL_N_STAGE": "N1a",
+          "CLINICAL_T_STAGE": "T2b",
+          "LAST_KNOWN_DISEASE_STATUS": "With Tumor",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C4872",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001043",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatic",
+          "TUMOR_GRADE": "High Grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.deepseek.r1-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 19800,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 20100,
+          "AJCC_STAGING_SYSTEM_EDITION": "8th",
+          "CLINICAL_M_STAGE": "M1b",
+          "CLINICAL_N_STAGE": "N1a",
+          "CLINICAL_T_STAGE": "T2b",
+          "LAST_KNOWN_DISEASE_STATUS": "With Tumor",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C4872",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001043",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatic",
+          "TUMOR_GRADE": "G3 High Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 7,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": "18000",
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 18200.0,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N0",
+          "CLINICAL_T_STAGE": "T1a",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic",
+          "METHOD_OF_DIAGNOSIS": "Incisional Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C3512",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0000955",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G1 Low Grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.deepseek.r1-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 18000,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 18200,
+          "AJCC_STAGING_SYSTEM_EDITION": "7th",
+          "CLINICAL_M_STAGE": "M0",
+          "CLINICAL_N_STAGE": "N0",
+          "CLINICAL_T_STAGE": "T1a",
+          "LAST_KNOWN_DISEASE_STATUS": "Tumor Free",
+          "METASTASIS_AT_DIAGNOSIS": "Non-metastatic (confirmed)",
+          "METHOD_OF_DIAGNOSIS": "Incisional Biopsy",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C3512",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0000955",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Primary",
+          "TUMOR_GRADE": "G1 Low Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 8,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": "-2",
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 14500.0,
+          "AJCC_STAGING_SYSTEM_EDITION": "6th",
+          "CLINICAL_M_STAGE": "MX",
+          "CLINICAL_N_STAGE": "NX",
+          "CLINICAL_T_STAGE": "TX",
+          "LAST_KNOWN_DISEASE_STATUS": "Not Reported",
+          "METASTASIS_AT_DIAGNOSIS": "Unknown",
+          "METHOD_OF_DIAGNOSIS": "Not Reported",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C9133",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001264",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Unknown",
+          "TUMOR_GRADE": "GX Grade Cannot Be Assessed"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.deepseek.r1-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": -1,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 14500,
+          "AJCC_STAGING_SYSTEM_EDITION": "6th",
+          "CLINICAL_M_STAGE": "MX",
+          "CLINICAL_N_STAGE": "NX",
+          "CLINICAL_T_STAGE": "TX",
+          "LAST_KNOWN_DISEASE_STATUS": "Not Reported",
+          "METASTASIS_AT_DIAGNOSIS": "Unknown",
+          "METHOD_OF_DIAGNOSIS": "Not Reported",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C9133",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0001264",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Unknown",
+          "TUMOR_GRADE": "GX Grade Cannot Be Assessed"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 9,
+        "input": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": "23000",
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 23500.0,
+          "AJCC_STAGING_SYSTEM_EDITION": "8th",
+          "CLINICAL_M_STAGE": "M1c",
+          "CLINICAL_N_STAGE": "N2c",
+          "CLINICAL_T_STAGE": "T4a",
+          "LAST_KNOWN_DISEASE_STATUS": "Distant Metastasis",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Imaging Technique",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C3510",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0002048",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatic",
+          "TUMOR_GRADE": "G3 High Grade"
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.deepseek.r1-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "AGE_IN_DAYS_AT_DIAGNOSIS": 23000,
+          "AGE_IN_DAYS_AT_LAST_KNOWN_DISEASE_STATUS": 23500,
+          "AJCC_STAGING_SYSTEM_EDITION": "8th",
+          "CLINICAL_M_STAGE": "M1c",
+          "CLINICAL_N_STAGE": "N2c",
+          "CLINICAL_T_STAGE": "T4a",
+          "LAST_KNOWN_DISEASE_STATUS": "Distant Metastasis",
+          "METASTASIS_AT_DIAGNOSIS": "Metastatic",
+          "METHOD_OF_DIAGNOSIS": "Imaging Technique",
+          "PRIMARY_DIAGNOSIS_NCI_THESAURUS_ID": "C3510",
+          "TISSUE_OR_ORGAN_OF_ORIGIN_UBERON_CODE": "UBERON:0002048",
+          "TUMOR_CLASSIFICATION_CATEGORY": "Metastatic",
+          "TUMOR_GRADE": "G3 High Grade"
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      }
+    ],
+    "metrics": {
+      "total_samples": 10,
+      "successful_runs": 0,
+      "failed_runs": 10,
+      "success_rate": 0.0,
+      "average_score": null,
+      "min_score": null,
+      "max_score": null,
+      "num_scored": 0
+    },
+    "duration_seconds": 0.23144221305847168,
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0
+    }
+  }
+}

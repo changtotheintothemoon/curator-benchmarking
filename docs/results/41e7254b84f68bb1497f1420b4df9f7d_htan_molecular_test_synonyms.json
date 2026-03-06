@@ -1,0 +1,23 @@
+{
+  "experiment_id": "41e7254b84f68bb1497f1420b4df9f7d",
+  "task_name": "htan_molecular_test_synonyms",
+  "task_hash": "d2a389c9602b448af33a4784c5248063",
+  "model_id": "microsoft/phi-4",
+  "system_instructions": "You are a metadata curation assistant. Your task is to help improve and correct metadata \naccording to the specific instructions provided for each task. Be precise, accurate, and \nfollow the guidelines carefully.\n",
+  "temperature": 0.0,
+  "thinking": false,
+  "tools": [],
+  "timestamp": "2026-03-06T04:19:46.220933",
+  "task_result": {
+    "task_name": "htan_molecular_test_synonyms",
+    "error": "OpenRouter API key not found. Please set OPENROUTER_API_KEY environment variable or add it to .aws/creds.yaml",
+    "metrics": {
+      "total_samples": 0,
+      "successful_runs": 0,
+      "failed_runs": 0,
+      "success_rate": 0,
+      "average_score": null
+    },
+    "duration_seconds": 0
+  }
+}

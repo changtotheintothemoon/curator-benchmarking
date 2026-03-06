@@ -1,0 +1,613 @@
+{
+  "experiment_id": "342b067dbb5e342c2084a2145b36b155",
+  "task_name": "htan_family_history_synonyms",
+  "task_hash": "6f89aef2ce4fcd98b5ef8d0238c84964",
+  "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+  "system_instructions": "_No response_",
+  "temperature": 0.0,
+  "thinking": false,
+  "tools": [],
+  "timestamp": "2026-03-06T04:16:17.544008",
+  "task_result": {
+    "task_name": "htan_family_history_synonyms",
+    "num_samples": 20,
+    "results": [
+      {
+        "sample_index": 0,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Positive",
+          "RELATIVES_WITH_CANCER_HISTORY": 2.0
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Yes",
+          "RELATIVES_WITH_CANCER_HISTORY": 2.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 1,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Negative",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "No",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 2,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Affirmative",
+          "RELATIVES_WITH_CANCER_HISTORY": 3.0
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Yes",
+          "RELATIVES_WITH_CANCER_HISTORY": 3.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 3,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Y",
+          "RELATIVES_WITH_CANCER_HISTORY": 1.0
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Yes",
+          "RELATIVES_WITH_CANCER_HISTORY": 1.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 4,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "N",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "No",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 5,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "True",
+          "RELATIVES_WITH_CANCER_HISTORY": 4.0
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Yes",
+          "RELATIVES_WITH_CANCER_HISTORY": 4.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 6,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "False",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "No",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 7,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Confirmed",
+          "RELATIVES_WITH_CANCER_HISTORY": 2.0
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Yes",
+          "RELATIVES_WITH_CANCER_HISTORY": 2.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 8,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Denied",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "No",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 9,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Present",
+          "RELATIVES_WITH_CANCER_HISTORY": 5.0
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Yes",
+          "RELATIVES_WITH_CANCER_HISTORY": 5.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 10,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Absent",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "No",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 11,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Unavailable",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Unknown",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 12,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Not Available",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Not Reported",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 13,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Missing",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Not Reported",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 14,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Not Known",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Unknown",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 15,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Unreported",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Not Reported",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 16,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Yes, positive",
+          "RELATIVES_WITH_CANCER_HISTORY": 3.0
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Yes",
+          "RELATIVES_WITH_CANCER_HISTORY": 3.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 17,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "No history",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "No",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 18,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Positive history",
+          "RELATIVES_WITH_CANCER_HISTORY": 6.0
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "Yes",
+          "RELATIVES_WITH_CANCER_HISTORY": 6.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 19,
+        "input": {
+          "FAMILY_MEMBER_CANCER_HISTORY": null,
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the Converse operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "FAMILY_MEMBER_CANCER_HISTORY": "No",
+          "RELATIVES_WITH_CANCER_HISTORY": null
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      }
+    ],
+    "metrics": {
+      "total_samples": 20,
+      "successful_runs": 0,
+      "failed_runs": 20,
+      "success_rate": 0.0,
+      "average_score": null,
+      "min_score": null,
+      "max_score": null,
+      "num_scored": 0
+    },
+    "duration_seconds": 0.4291374683380127,
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,773 @@
+{
+  "experiment_id": "d8d30545060b854dfcdc108c1f494761",
+  "task_name": "htan_exposure_imputation",
+  "task_hash": "ddf6fab26eb07692d9e5e0f1a051860e",
+  "model_id": "openai.gpt-oss-120b-1:0",
+  "system_instructions": "### Temperature\n\n1.0",
+  "temperature": 1.0,
+  "thinking": false,
+  "tools": [],
+  "timestamp": "2026-03-06T04:17:25.435023",
+  "task_result": {
+    "task_name": "htan_exposure_imputation",
+    "num_samples": 20,
+    "results": [
+      {
+        "sample_index": 0,
+        "input": {
+          "SMOKING_HISTORY": "Current smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": 30.0,
+          "YEARS_SMOKED": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Current smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": 30.0,
+          "YEARS_SMOKED": 30.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 1,
+        "input": {
+          "SMOKING_HISTORY": "Former Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "No",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Asbestos Exposure",
+          "PACK_YEARS_SMOKED": null,
+          "YEARS_SMOKED": 25.0
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Former Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "No",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Asbestos Exposure",
+          "PACK_YEARS_SMOKED": 25.0,
+          "YEARS_SMOKED": 25.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 2,
+        "input": {
+          "SMOKING_HISTORY": "Current Every-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": null,
+          "YEARS_SMOKED": 35.0
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Current Every-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": 35.0,
+          "YEARS_SMOKED": 35.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 3,
+        "input": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": null,
+          "YEARS_SMOKED": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Chemical Exposure",
+          "PACK_YEARS_SMOKED": null,
+          "YEARS_SMOKED": null
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 4,
+        "input": {
+          "SMOKING_HISTORY": "Current Some-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "No",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": 15.0,
+          "YEARS_SMOKED": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Current Some-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "No",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": 15.0,
+          "YEARS_SMOKED": 15.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 5,
+        "input": {
+          "SMOKING_HISTORY": "Former Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": 40.0,
+          "YEARS_SMOKED": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Former Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": 40.0,
+          "YEARS_SMOKED": 40.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 6,
+        "input": {
+          "SMOKING_HISTORY": "Current smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Unknown",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Radiation Exposure",
+          "PACK_YEARS_SMOKED": 25.0,
+          "YEARS_SMOKED": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Current smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Unknown",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Radiation Exposure",
+          "PACK_YEARS_SMOKED": 25.0,
+          "YEARS_SMOKED": 25.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 7,
+        "input": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "No",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": null,
+          "YEARS_SMOKED": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "No",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Asbestos Exposure",
+          "PACK_YEARS_SMOKED": null,
+          "YEARS_SMOKED": null
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 8,
+        "input": {
+          "SMOKING_HISTORY": "Current Every-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": 45.0,
+          "YEARS_SMOKED": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Current Every-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": 45.0,
+          "YEARS_SMOKED": 45.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 9,
+        "input": {
+          "SMOKING_HISTORY": "Former Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Refused",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Chemical Exposure",
+          "PACK_YEARS_SMOKED": 35.0,
+          "YEARS_SMOKED": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Former Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Refused",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Chemical Exposure",
+          "PACK_YEARS_SMOKED": 35.0,
+          "YEARS_SMOKED": 35.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 10,
+        "input": {
+          "SMOKING_HISTORY": "Current Some-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": null,
+          "YEARS_SMOKED": 20.0
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Current Some-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": 20.0,
+          "YEARS_SMOKED": 20.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 11,
+        "input": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Not reported",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": null,
+          "YEARS_SMOKED": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Not reported",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": null,
+          "YEARS_SMOKED": null
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 12,
+        "input": {
+          "SMOKING_HISTORY": "Non-smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": null,
+          "YEARS_SMOKED": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Non-smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Wood Dust Exposure",
+          "PACK_YEARS_SMOKED": null,
+          "YEARS_SMOKED": null
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 13,
+        "input": {
+          "SMOKING_HISTORY": "Current smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": 50.0,
+          "YEARS_SMOKED": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Current smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": 50.0,
+          "YEARS_SMOKED": 50.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 14,
+        "input": {
+          "SMOKING_HISTORY": "Former Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "No",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Smoke Exposure",
+          "PACK_YEARS_SMOKED": null,
+          "YEARS_SMOKED": 30.0
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Former Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "No",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Smoke Exposure",
+          "PACK_YEARS_SMOKED": 30.0,
+          "YEARS_SMOKED": 30.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 15,
+        "input": {
+          "SMOKING_HISTORY": "Current Every-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Unknown",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": null,
+          "YEARS_SMOKED": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Current Every-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Unknown",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": 40.0,
+          "YEARS_SMOKED": 40.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 16,
+        "input": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Wood Dust Exposure",
+          "PACK_YEARS_SMOKED": null,
+          "YEARS_SMOKED": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Never Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Wood Dust Exposure",
+          "PACK_YEARS_SMOKED": null,
+          "YEARS_SMOKED": null
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 17,
+        "input": {
+          "SMOKING_HISTORY": "Current Some-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "No",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": 10.0,
+          "YEARS_SMOKED": null
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Current Some-Day Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "No",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": 10.0,
+          "YEARS_SMOKED": 10.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 18,
+        "input": {
+          "SMOKING_HISTORY": "Former Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": 45.0,
+          "YEARS_SMOKED": 35.0
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Former Smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "Yes",
+          "ENVIRONMENTAL_EXPOSURE": "Yes",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": "Radon Exposure",
+          "PACK_YEARS_SMOKED": 45.0,
+          "YEARS_SMOKED": 35.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      },
+      {
+        "sample_index": 19,
+        "input": {
+          "SMOKING_HISTORY": "Current smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "No",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": null,
+          "YEARS_SMOKED": 40.0
+        },
+        "response": {
+          "success": false,
+          "error": "An error occurred (IncompleteSignatureException) when calling the InvokeModel operation: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=cQ4NvdQimYUQF6TWcmXs0EbxtO23QVJZkqGmqPqAElg=",
+          "error_code": "IncompleteSignatureException",
+          "model_id": "openai.gpt-oss-120b-1:0",
+          "attempt": 1
+        },
+        "score": null,
+        "metrics": {
+          "score": null
+        },
+        "ground_truth": {
+          "SMOKING_HISTORY": "Current smoker",
+          "ALCOHOL_HISTORY_INDICATOR": "No",
+          "ENVIRONMENTAL_EXPOSURE": "No",
+          "ENVIRONMENTAL_EXPOSURE_TYPE": null,
+          "PACK_YEARS_SMOKED": 40.0,
+          "YEARS_SMOKED": 40.0
+        },
+        "token_usage": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "total_tokens": 0
+        },
+        "tool_calls": [],
+        "tool_execution_history": []
+      }
+    ],
+    "metrics": {
+      "total_samples": 20,
+      "successful_runs": 0,
+      "failed_runs": 20,
+      "success_rate": 0.0,
+      "average_score": null,
+      "min_score": null,
+      "max_score": null,
+      "num_scored": 0
+    },
+    "duration_seconds": 0.49306392669677734,
+    "token_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0
+    }
+  }
+}
